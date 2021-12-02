@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Context, contextData, getRandom } from "../ContextAPI/context";
 import Details from "./AboutDetails/AboutDetails";
 import DetailsAgain from "./AboutDetails/DetailsAgain";
+import MemoRoot from "./AboutDetails/MemoRoot";
 
 const About=()=>{
     const [message,setMessage]=useState(contextData.message)
@@ -13,6 +14,7 @@ const About=()=>{
               <Details/>
               <DetailsAgain/>
         </Context.Provider>
+        <MemoRoot/>
     </div>
     )
 }
