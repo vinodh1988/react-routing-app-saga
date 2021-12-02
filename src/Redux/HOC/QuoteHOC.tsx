@@ -8,7 +8,7 @@ export default connect((data:any)=>{
       author: data.quoteData.author
   }
 },(dispatch)=>{
-    return bindActionCreators({getNewQuote:()=>{
-        
-        return {type:"READ_QUOTES"}}},dispatch)
+    return bindActionCreators({getNewQuote: ()=>{
+      return {type:"READ_QUOTES"}
+    }},dispatch)
 })(Quote)
